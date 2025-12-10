@@ -1,0 +1,9 @@
+name: push-pr workflow
+on: 
+    workflow_dispatch:
+jobs: 
+  manual-trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: manual trigger step
+        run: echo "This workflow was triggered manually."
