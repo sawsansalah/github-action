@@ -1,4 +1,4 @@
-name: push-pr workflow
+name:  manualworkflow
 on: 
     workflow_dispatch:
 jobs: 
