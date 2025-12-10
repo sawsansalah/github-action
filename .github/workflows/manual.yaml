@@ -19,4 +19,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: manual trigger step
-        run: echo "This workflow was triggered manually."
+        run: echo "This workflow was triggered manually. The selected environment is ${{ inputs.environment }}."
