@@ -1,6 +1,19 @@
 name:  manualworkflow
 on: 
-    workflow_dispatch:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'An environment for the manual workflow'
+        required: true
+        default: "dev"
+        type: choice
+        options: 
+          - dev
+          - staging
+          - production
+
+        
+
 jobs: 
   manual-trigger:
     runs-on: ubuntu-latest
