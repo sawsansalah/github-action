@@ -1,0 +1,13 @@
+
+on:
+  workflow_dispatch:  
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a welcome message
+        run: echo "Welcome to the example GitHub Action workflow!"
+      - name: run inside container
+        uses: docker://alpine:3.8
+        with:
+          args: echo "Hello from inside the container"
