@@ -1,3 +1,4 @@
+name: Hybird YAML Workflow
 on:
    workflow_dispatch:
 jobs:
